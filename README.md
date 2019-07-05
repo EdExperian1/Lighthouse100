@@ -1,5 +1,7 @@
 To Setup SSL and score 100% on the lighthouse tests - follow https://www.freecodecamp.org/news/how-to-get-https-working-on-your-local-development-environment-in-5-minutes-7af615770eec/ 
 
+then run `yarn run pre-perf` and `yarn run perf`
+
 ## TODO: 
 Figure out how to update app with service worker in place
 
