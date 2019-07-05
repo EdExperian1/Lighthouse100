@@ -1,5 +1,8 @@
 To Setup SSL and score 100% on the lighthouse tests - follow https://www.freecodecamp.org/news/how-to-get-https-working-on-your-local-development-environment-in-5-minutes-7af615770eec/ 
 
+## TODO: 
+Figure out how to update app with service worker in place
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
