@@ -6,11 +6,17 @@ const App = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <Suspense fallback={<div>Loading...</div>}>
-          <LogoComponent></LogoComponent>
+        <Suspense fallback={<div>Hol up...</div>}>
+          <LogoComponent />
         </Suspense>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          <code>
+            this my{" "}
+            <span role="img" aria-label="100">
+              💯
+            </span>{" "}
+            app yo
+          </code>
         </p>
         <a
           className="App-link"
@@ -18,7 +24,7 @@ const App = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          a damn link even
         </a>
       </header>
     </div>
