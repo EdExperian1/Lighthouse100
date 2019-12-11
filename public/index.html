@@ -4,7 +4,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta name="Description" content="A React app to score a whole one hun">
+    <meta
+      name="Description"
+      content="A baseline for a 100/100 lighthouse score"
+    />
+    <link rel="apple-touch-icon" href="yao.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -19,14 +23,34 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>Lighthouse 100</title>
     <link rel="canonical" href="https://localhost/" />
-
   </head>
   <body>
-    <noscript>YItsf gine nodnfsdiofn.</noscript>
-    <a href="#foo">skip to content</a>
-    <header id="foo">that's the shit</header>
+    <noscript>noscript.</noscript>
+    <style>
+      /* inline critical css */
+      .skip-to {
+        display: block;
+        width: 100%;
+        margin-top: -2.5rem;
+        line-height: 2.5rem;
+        background-color: #61dafb;
+        color: #282c34;
+        transition: all 0.3s ease-out;
+        font-weight: 700;
+        text-align: center;
+        text-decoration: none;
+      }
+      .skip-to:focus {
+        margin-top: 0;
+      }
+      .critical-stuff {
+        display: none;
+      }
+    </style>
+    <a class="skip-to" href="#root">skip to content</a>
+    <header class="critical-stuff">header in critical render path</header>
     <div id="root"></div>
     <!--
       This HTML file is a template.

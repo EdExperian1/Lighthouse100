@@ -4,27 +4,27 @@ const LogoComponent = React.lazy(() => import("./LogoComponent"));
 
 const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Suspense fallback={<div>Hol up...</div>}>
+    <div className="app">
+      <header className="app-header">
+        <Suspense fallback={<p>Loading</p>}>
           <LogoComponent />
         </Suspense>
         <p>
           <code>
-            this my{" "}
+            this my
             <span role="img" aria-label="100">
-              💯
-            </span>{" "}
+              &nbsp;💯&nbsp;
+            </span>
             app yo
           </code>
         </p>
         <a
-          className="App-link"
+          className="app-link"
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
         >
-          a damn link even
+          Anchor link
         </a>
       </header>
     </div>

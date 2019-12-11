@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[3],{12:function(e,n,o){e.exports=o.p+"static/media/logo.5d5d9eef.svg"},13:function(e,n,o){"use strict";o.r(n);var t=o(0),a=o.n(t),s=o(12),c=o.n(s);n.default=function(){return a.a.createElement("img",{src:c.a,className:"App-logo",alt:"logo"})}}}]);
-//# sourceMappingURL=3.e9ac7880.chunk.js.map

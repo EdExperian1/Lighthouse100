@@ -13,6 +13,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "postbuild": "cd ~/apps/Lighthouse100/build/static && gzip js/*.js && gzip css/*.css",
     "test": "react-scripts test --detectLeaks",
     "edtest": "jest ./ -detect-leaks",
     "eject": "react-scripts eject",

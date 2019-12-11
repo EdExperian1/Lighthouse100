@@ -1,8 +1,9 @@
-To Setup SSL and score 100% on the lighthouse tests - follow https://www.freecodecamp.org/news/how-to-get-https-working-on-your-local-development-environment-in-5-minutes-7af615770eec/ 
+To Setup SSL and score 100% on the lighthouse tests - follow https://www.freecodecamp.org/news/how-to-get-https-working-on-your-local-development-environment-in-5-minutes-7af615770eec/
 
 then run `yarn run pre-perf` and `yarn run perf`
 
-## TODO: 
+## TODO:
+
 Figure out how to update app with service worker in place
 
 ##
@@ -19,7 +20,22 @@ Sets up the http redirection server (forwards to https)
 
 ### `yarn run perf`
 
-Builds the app in production mode and serves it on https://localhost using http2 - run a lighthouse audit to see 100 
+Builds the app in production mode and serves it on https://localhost using http2<br>
+The build folder is ready to be deployed.<br>
+You may serve it with a static server:<br>
+
+yarn global add serve<br>
+serve -s build
+
+### `yarn run build`
+
+Builds the app for production to the `build` folder.<br>
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.<br>
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 ### `yarn run start`
 
@@ -33,16 +49,6 @@ You will also see any lint errors in the console.
 
 Launches the test runner in the interactive watch mode.<br>
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 ### `yarn run eject`
 
