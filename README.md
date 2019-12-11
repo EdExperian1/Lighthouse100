@@ -4,7 +4,7 @@ then run `yarn run pre-perf` and `yarn run perf`
 
 ## TODO:
 
-Figure out how to update app with service worker in place
+Figure out how to update app with service worker in place - follow https://stackoverflow.com/questions/40100922/activate-updated-service-worker-on-refresh
 
 ##
 
